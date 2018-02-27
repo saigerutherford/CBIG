@@ -229,7 +229,8 @@ if( $csf == 1 ) then
 			eval $cmd
 			
 			set vent_erode = 0
-			foreach i (`seq 0 1 ${csf_max_erode}`) 
+			foreach i (`seq 0 1 ${csf_max_erode}`)  # When erode_space="func", default csf_max_erode=0. 
+			                                        # Actually $subject.func.ventricles_erode1.nii.gz, ... won't be generated.
 				set cmd = "mri_binarize --i mask/$subject.func.aseg.nii --ventricles --erode ${i} --o mask/$subject.func.ventricles_erode${i}.nii.gz"
 				echo $cmd |& tee -a $LF
 				eval $cmd
@@ -245,6 +246,7 @@ if( $csf == 1 ) then
 			eval $cmd |& tee -a $LF
 		
 		else
+			set vent_erode = 0
 			foreach i (`seq 0 1 $csf_max_erode`)
 				set cmd = "mri_binarize --i $anat_dir/$anat/mri/aparc+aseg.mgz --ventricles --erode ${i} --o mask/${subject}.anat.ventricles_erode${i}.nii.gz"
 				echo $cmd |& tee -a $LF

@@ -25,7 +25,7 @@
     
 - Release v0.4.7 (16/01/2018):
 
-    1. Add `cofig` and `unit_tests` folders.
+    1. Add `config` and `unit_tests` folders.
     
     2. Add project-specific prefix `preproc` for preprocessing scripts.
 
@@ -38,6 +38,12 @@
     3. Add an option to specify maximal memory usage in censoring interpolation step.
     
     4. Add `examples` folder.
+    
+- Release v0.4.11 (27/02/2018):
+
+    1. Fix a bug: ventricles mask was not generated when the ventricles segmentation in anantomical space is <=100 voxels.
+    
+    2. Modify functions `CBIG_ComputeROIs2ROIsCorrelationMatrix.m` (used by `CBIG_preproc_FCmetrics.m`) and `CBIG_preproc_QC_greyplot.m` so that they do not need matlab statistics toolbox now.
     
 
 ----
