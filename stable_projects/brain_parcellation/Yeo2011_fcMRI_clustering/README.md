@@ -31,6 +31,10 @@ Zuo, X.N., et al. [**An open science resource for establishing reliability and r
     1. Add project-specific prefix `Yeo2011` in all scripts names.
     
     2. Add `config`, `unit_tests`, and `examples` folders.
+    
+- Release v0.4.12 (27/02/2018): 
+
+    1. Add project-specific prefix `Yeo2011` for two scripts of **Yeo2011_fcMRI_clustering**: `1000subjects_reference/Yeo_JNeurophysiol11_SplitLabels/scripts/CBIG_DownsampleMNI1mmParcellationTo2mm.csh` and `1000subjects_reference/Yeo_JNeurophysiol11_SplitLabels/scripts/CBIG_ProjectSplitLabels2MNI1mm.m`, which were missing in release v0.4.10.
  
 ----
 

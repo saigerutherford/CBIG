@@ -1,6 +1,6 @@
-function CBIG_ProjectSplitLabels2MNI1mm
+function CBIG_Yeo2011_ProjectSplitLabels2MNI1mm
 
-% CBIG_ProjectSplitLabels2MNI1mm
+% CBIG_Yeo2011_ProjectSplitLabels2MNI1mm
 % Written by CBIG under MIT license: https://github.com/ThomasYeoLab/CBIG/blob/master/LICENSE.md
 
 cortex_mask  = MRIread(fullfile(getenv('CBIG_CODE_DIR'), 'data', 'extras', 'surf2surf_gui_data', 'CorrespondenceFreeSurferVolSurfSpace', 'coord_vol2surf', 'MNI_cortex_estimate.150.nii.gz'));
